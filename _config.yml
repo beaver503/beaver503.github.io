@@ -1,0 +1,20 @@
+# 站点基础信息
+title: Beaver 的博客
+description: Obsidian + GitHub Pages 搭建的个人博客
+author: beaver503
+
+# 网页url，固定写这个
+baseurl: ""
+url: "https://beaver503.github.io"
+
+# 主题（使用Jekyll默认 minima，开箱即用不用额外装东西）
+theme: minima
+
+# 文章目录
+collections:
+  posts:
+    output: true
+
+# 开启语法高亮
+markdown: kramdown
+highlighter: rouge
