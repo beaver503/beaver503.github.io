@@ -1,0 +1,4 @@
+/* 隐藏右下角“本站采用Jekyll主题Chirpy” */
+footer .powered {
+  display: none !important;
+}
