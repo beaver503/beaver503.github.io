@@ -51,11 +51,6 @@ GitHub 免费提供的**静态网站托管**，把你的网页代码放在 GitHu
 
 Jekyll 会自动忽略带 _下划线开头的文件夹（_posts、_layouts）Jekyll 博客文章，必须放在 _posts文件夹 内，md 文件名严格遵守格式：YYYY-MM-DD-文章标题.md 例如 2026-10-06-first-blog.md，放在仓库根目录_posts下面，Jekyll 才会识别为博客文章。
 
-Masking as MD
-插件简要说明 作用：可以在 Obsidian 里直接打开并编辑 .html / .css / .json / .yml 这类非 md 文件，用 CodeMirror 代码编辑器渲染，带语法高亮。 
-用途：直接在库内修改 index.html、_layouts/post.html、_config.yml，不用切换到外部 VS Code，改完直接用 Obsidian Git 提交推送 GitHub Pages。
-特点：源码编辑，不是可视化拖拽网页，Liquid 的 {{ }}、{% %} Jekyll 模板标签可以正常编辑。 
-使用小提示： 安装后，点击库里面的 html /yml 文件就会直接用代码视图打开，编辑保存，文件直接写入本地仓库。
 
 # 手把手添加 Jekyll 模板
 （放到你的 Obsidian 库 `D:\beaver503.github.io`）
