@@ -608,4 +608,5 @@ bundle info --path jekyll-theme-chirpy
 1. assets/img/favicons/favicon.svg ✅ 是新图
 2. assets/img/favicons/favicon.ico ✅ 是新图
 3. 关闭jekyll → 删除_site → 重启jekyll
-4. 无痕窗口访问 `[http://127.0.0.1:4000/assets/img/favicons/favicon.svg](http://127.0.0.1:4000/assets/img/favicons/favicon.svg)`
+4. 无痕窗口访问 
+ [http://127.0.0.1:4000/assets/img/favicons/favicon.svg](http://127.0.0.1:4000/assets/img/favicons/favicon.svg)
