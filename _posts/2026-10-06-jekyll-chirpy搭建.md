@@ -5,15 +5,16 @@ categories: Jekyll
 tags:
   - Chirpy
   - 博客
+render_with_liquid: false
 ---
 
-# ✅ Chirpy 官方在线预览站点（直接浏览器打开）
+##  Chirpy 官方在线预览站点
 
-👉 **[https://chirpy.cotes.page/**](https://chirpy.cotes.page/**) 
-![[Pasted image 20261007140759.png]]
+👉 [https://chirpy.cotes.page/](https://chirpy.cotes.page/) 
+
 这就是Chirpy作者本人的博客，也就是主题完整Demo，你可以直接浏览全部页面：首页文章列表、文章详情页、标签页、分类页、搜索、暗色模式、公式/Mermaid图表演示。
 
-## 页面布局特点
+### 页面布局特点
 
 - **左侧侧边栏**：头像、站点名称、导航（首页、分类、标签、归档、关于）
 - **主内容区**：文章卡片列表，支持置顶文章
@@ -22,29 +23,29 @@ tags:
 - **顶部搜索框**：全文站内搜索
 - 移动端自动适配，侧边栏折叠成汉堡菜单
 
-## 核心功能一览
+### 核心功能一览
 
 1. 文章置顶、标签、两级分类、归档时间线
 2. Markdown增强：提示块、图片排版、表格
 3. RSS订阅、评论系统接入、访问统计
 4. PWA，可以添加到手机桌面
 
-# 使用chirpy模板搭建个人网站
+### 使用chirpy模板搭建个人网站
 
-##  模板仓库
+####  模板仓库
 
  **官方推荐新手用 Chirpy Starter**： [https://github.com/cotes2020/chirpy-starter](https://github.com/cotes2020/chirpy-starter) 
 
 
  一键模板创建仓库，本地`bundle install`之后，**本地预览和线上Demo完全一致**。
 
-## 快速上手（Chirpy Starter）
+#### 快速上手（Chirpy Starter）
 
 1. 打开上面starter仓库，点 `Use this template`，新建仓库命名：`beaver503.github.io`
 
 ![[Pasted image 20261007141817.png]]
 
-![[Pasted image 20261007142008.png]]
+![](assets/img/Pasted image 20261007141817.png)
 
 2. Clone到本地
 
@@ -60,11 +61,11 @@ git clone 你的仓库地址
 
 > 文章放在 `_posts`，文件名格式：`2026-10-06-my-note.md`
 
-# 一些常见问题
+## 一些常见问题
 
-## 要不想删原来的库？
+### 要不想删原来的库？
 
-## 方案1：直接复用这个仓库（推荐，不用新建库）
+#### 方案1：直接复用这个仓库（推荐，不用新建库）
 
 1. 把当前仓库里**所有文件全部清空**（本地文件夹全部删掉，保留.git文件夹）
 2. 把 Chirpy Starter 的全套文件复制进来
@@ -73,7 +74,7 @@ git clone 你的仓库地址
     > ✅ 好处：仓库名字还是 `beaver503.github.io`，域名不变，不用改任何Github Pages设置。 ⚠️ 风险：旧代码、旧提交记录全部还在，只是被新文件覆盖，历史提交不会消失。
     
 
-## 方案2：新建仓库，旧仓库保留（安全稳妥）
+#### 方案2：新建仓库，旧仓库保留（安全稳妥）
 
 1. 先用 `Use this template` 从chirpy-starter生成**新仓库**
 2. 旧仓库 `beaver503.github.io` 可以：
@@ -81,7 +82,7 @@ git clone 你的仓库地址
     - ② **重命名**：改成别的名字，比如`old-blog-backup`，释放`beaver503.github.io`名字，再把新Starter仓库命名为`beaver503.github.io`；
     - ③ **彻底删除**（不推荐，一旦删除仓库，提交记录全部消失，不可恢复）。
 
-## ✅ 我更推荐的操作流程（方案1，原地替换，域名不变）
+####  我更推荐的操作流程（方案1，原地替换，域名不变）
 
 1. 本地进入 `D:\beaver503.github.io`
 2. **删除里面全部文件**，但是不要删掉 `.git` 隐藏文件夹（这个是仓库核心，删了就变成全新文件夹）
@@ -94,7 +95,7 @@ git clone 你的仓库地址
 > .obsidian 文件夹不要删！
 
 
-# Chirpy Starter `_config.yml` 常用配置详细展开
+## Chirpy Starter `_config.yml` 常用配置详细展开
 
 > 文件路径：仓库根目录 `_config.yml` 只贴你大概率会用到的，注释写清楚，直接复制修改即可。
 
@@ -112,10 +113,10 @@ author:
   social:                       # 社交链接，侧边栏图标
     - type: github
       icon: github
-      url: "[https://github.com/beaver503](https://github.com/beaver503)"
+      url: " "
 
 # --------------- 网站链接 ---------------
-url: "[https://beaver503.github.io](https://beaver503.github.io)"
+url: " "
 baseurl: "" # 个人主页仓库保持空字符串，不要填东西
 
 # --------------- 文章分页 ---------------
@@ -193,7 +194,7 @@ jekyll-archives:
     year: '/:year/'
 ```
 
-## 一、头像配置详细步骤
+### 一、头像配置详细步骤
 
 1. 准备图片，建议正方形，大小 200×200 左右，jpg/png
 2. 放到路径：`assets/img/avatar.jpg`
@@ -205,7 +206,7 @@ avatar: /assets/img/avatar.jpg
 
 > 注意：**开头必须带 `/`**，代表从网站根目录读取。 修改配置文件后，需要重启 jekyll serve 才生效。
 
-## 二、侧边栏导航菜单
+### 二、侧边栏导航菜单
 
 导航菜单文件：`_data/sidebar-main.yml` 默认自带首页、分类、标签、归档、关于。 你可以在这里增删菜单，示例：
 
@@ -232,7 +233,7 @@ title: 关于我
 这里写自我介绍。
 ```
 
-## 三、Giscus评论系统详细说明（可选）
+### 三、Giscus评论系统详细说明（可选）
 
 > 给每篇文章加评论区。
 
@@ -241,7 +242,7 @@ title: 关于我
 3. 按页面指引，拿到 `repo_id` 和 `category_id`，回填到上面_config.yml的giscus区块。
 4. 提交代码，线上页面就会出现评论框。本地预览看不到评论，只能线上生效。
 
-## 四、Mermaid流程图 / LaTeX公式
+### 四、Mermaid流程图 / LaTeX公式
 
 - `mermaid: true`：直接在markdown写流程图，不需要额外插件
 
@@ -257,7 +258,7 @@ A[笔记] --> B[Chirpy博客]
 $$E=mc^2$$
 ````
 
-## 五、写文章Front Matter模板（放在_post里的md头部）
+### 五、写文章Front Matter模板（放在_post里的md头部）
 
 ```
 ---
@@ -272,7 +273,7 @@ toc: true # 单独控制这篇文章是否显示目录
 
 文件名必须：`2026-10-06-jekyll-chirpy.md`
 
-## 六、完整 `.gitignore`（Chirpy + Obsidian）
+### 六、完整 `.gitignore`（Chirpy + Obsidian）
 
 ```
 # Jekyll
@@ -295,12 +296,12 @@ Thumbs.db
 .DS_Store
 ```
 
-## 七、生效规则
+### 七、生效规则
 
 1. 修改 `_config.yml` **必须重启jekyll服务**（Ctrl+C，再重新执行`bundle exec jekyll serve`）
 2. 修改文章、普通md页面，保存自动刷新（livereload）
 
-## 可选补充：图片管理
+## 图片管理
 
 博客图片统一放到 `assets/img/`，引用写法：
 
@@ -310,16 +311,14 @@ Thumbs.db
 
 > Obsidian内部`[[wikilink]]`格式Chirpy**不识别**，图片链接要改成标准markdown格式。
 
-如果你想，我可以单独给你写一份：**Obsidian → Chirpy发布的笔记预处理清单**（链接转换、图片迁移、批量Front Matter）。
-
-# 用win电脑截屏直接粘贴到Obsidian中是一个连接，图片在哪里
-## ✅ 一句话结论
+## 截屏直接粘贴到Obsidian
+###  图片在哪里
 
 正常 `Win+Shift+S` 截图，`Ctrl+V` 粘贴进 Obsidian，**图片会被自动保存到你的Vault（库）里面**，`![[Pasted image xxx.png]]` 这个链接，指向的就是Vault里的图片文件。
 
 > 你看到 `[[xxx.png]]` 这种链接，**前面少了感叹号 `!` 就不会预览图片，只显示成文本链接**。 正确嵌入写法：`![[Pasted image 20261007143000.png]]`
 
-## 📍图片到底存在哪里？
+### 图片应该存在哪里？
 
 打开 Obsidian 设置 → **文件与链接 → 新建附件的默认存放位置**，4个选项决定图片路径：
 
@@ -330,17 +329,19 @@ Thumbs.db
 
 文件名一般是：`Pasted image 年月日时分秒.png`，在左侧文件管理器直接搜 `Pasted image` 就能找到。
 
-# 删掉网站下标
+## 删掉网站下标
 
 ![[Pasted image 20261007145418.png]]
 
-## 找_includes文件夹
+![](assets/img/Pasted image 20261007145418.png)
+
+### 找_includes文件夹
 
 Chirpy Starter 用的是**gem主题**，`footer.html`、`sidebar.html` 这些源码**不在你的本地仓库文件夹里**，它们放在Ruby的gem包内部，所以你在本地`_includes`里找不到。
 
 > 两种解决办法：① CSS直接隐藏（最简单，推荐，不用碰gem源码）；② 把主题文件复制到本地覆盖。
 
-## 方案B：如果你想直接修改源码（永久删掉，不是隐藏）
+### 方案B：如果你想直接修改源码（永久删掉，不是隐藏）
 
 1. 在PowerShell输入这条命令，查看gem主题所在路径
 
@@ -368,7 +369,7 @@ bundle info --path jekyll-theme-chirpy
 
 ---
 
-## 顺带补充
+### 顺带补充
 
 左下角图标（侧边栏底部），也可以直接在`_data/contact.yml`把所有条目注释掉，就不会渲染图标，这个文件**你本地仓库是有的**。 打开`_data/contact.yml`，全部加#注释：
 
@@ -383,20 +384,20 @@ bundle info --path jekyll-theme-chirpy
 
 保存重启，左下角图标消失。
 
-## ❗不用复制全部文件！只复制你**需要修改的那单个文件**就够了
+### 只复制**需要修改的那单个文件**
 
 Jekyll 的规则：
 
 > 本地仓库 `_includes/` 文件夹**只放你要改动的模板**；没放到本地的文件，会继续自动从gem主题包读取。 不需要把gem里`_includes`一整套全部拷过来。
 
-## 本次你只需要复制这2个文件
+### 需要复制这2个文件
 
 1. `footer.html` → 修改底部版权、Chirpy署名文字
 2. `sidebar.html` → 修改侧边栏（左下角社交图标）
 
 > 其他所有文件（head.html、post.html、toc.html等等）**完全不用复制**，继续使用gem原版。
 
-## 操作流程
+### 操作流程
 
 1. 在你的仓库根目录新建文件夹 `_includes`（如果不存在）
 2. 从gem目录的`_includes`里，**单独拷贝** `footer.html` 和 `sidebar.html` 放到你本地新建的`_includes`
@@ -405,21 +406,21 @@ Jekyll 的规则：
 
 Jekyll会优先加载你本地这两个文件；剩下的模板依旧读取gem包，不会出问题。
 
-## 补充说明
+### 补充说明
 
 - 后续如果你想改别的部分（比如文章头部、页面head），**再单独复制对应的那一个文件**过来就行，一次性不用多拷。
 - 好处：仓库干净，不会带一堆冗余模板；以后升级Chirpy主题版本也更简单（只需要对比你修改过的少量文件）。
 - 坑提醒：不要一次性把全部`_includes`文件复制到本地。后续升级主题时，大量本地文件会覆盖新版主题文件，容易出现样式/功能错乱。
 
-## 顺带回顾
+### 顺带回顾
 
 侧边栏左下角图标，**优先用 `_data/contact.yml` 注释全部社交条目**，这个方法不用复制`sidebar.html`，最简单。 只有当你想彻底删掉渲染代码，才需要复制`sidebar.html`。
 
-## 新版 Chirpy（7.x）的 `footer.html` 代码和旧版本不一样，
+### 新版 Chirpy（7.x）的 `footer.html` 代码和旧版本不一样，
 
 **没有直接写死 `footer-left / footer-right` 这两个class的标签**。
 
-## ✅ 新版 Chirpy 7.x 的 footer.html 完整原版代码
+###  新版 Chirpy 7.x 的 footer.html 完整原版代码
 
 ```
 <footer class="row">
@@ -446,7 +447,7 @@ Jekyll会优先加载你本地这两个文件；剩下的模板依旧读取gem�
 
 > 左右两块是**两个`<div>`**，不是footer-left/footer-right。
 
-## 方案1：直接注释掉页脚全部文字（推荐）
+### 方案1：直接注释掉页脚全部文字（推荐）
 
 你把gem里的footer.html复制到本地`_includes/footer.html`之后： **把整个`<footer> ... </footer>`块注释掉**，如下：
 
@@ -477,7 +478,7 @@ Jekyll会优先加载你本地这两个文件；剩下的模板依旧读取gem�
 
 保存，重启`bundle exec jekyll serve`，页面底部版权、Chirpy署名**全部消失**。
 
-## 方案2：CSS 新版专用选择器（优先试这个，不用改html）
+### 方案2：CSS 新版专用选择器（优先试这个，不用改html）
 
 新建`assets/css/custom.css`，写入下面代码
 
@@ -501,7 +502,7 @@ footer.row {
 
 > 浏览器一定要 `Ctrl+F5` 强制刷新清除缓存！普通刷新不会加载新css。
 
-## 快速定位技巧（以后自己找元素）
+### 快速定位技巧（以后自己找元素）
 
 1. 浏览器F12打开开发者工具
 2. 点左上角**选择元素箭头**，点击页面上你要删除的文字
@@ -512,13 +513,13 @@ footer.row {
 > 1. 先改`_data/contact.yml`去掉左下角图标
 > 2. 然后用方案1，复制原版footer.html到本地，直接把footer整块注释掉，一次性删掉底部两行文字。
 
-# 修改导航小图标
+### 修改导航小图标
 
-## 📌 浏览器标签页小图标（Favicon）更换，Chirpy主题
+##  浏览器标签页小图标（Favicon）更换，Chirpy主题
 
 > 就是你截图里「Beaver 的笔记」左边这个图标，术语叫 **favicon**
 
-## 1. 目录位置
+### 1. 目录位置
 
 在你的项目根目录：
 
@@ -528,7 +529,7 @@ assets/img/favicons/
 
 > 如果这个文件夹不存在，你手动新建：`assets/img/favicons` ⚠️ 注意：gem版Chirpy，**本地仓库这个文件夹是空的，需要你自己放图标文件进去，Jekyll会优先读取本地assets里的资源**
 
-## 2. 制作多尺寸图标包（推荐）
+### 2. 制作多尺寸图标包（推荐）
 
 1. 准备一张**正方形图片**，建议 512×512 以上PNG
 2. 打开在线生成网站：[https://realfavicongenerator.net/](https://realfavicongenerator.net/)
@@ -537,7 +538,7 @@ assets/img/favicons/
 
 > 这些文件包含浏览器标签、手机平板、桌面快捷方式等不同场景的图标。
 
-## 3. 重启jekyll
+### 3. 重启jekyll
 
 ```
 bundle exec jekyll serve
@@ -545,7 +546,7 @@ bundle exec jekyll serve
 
 浏览器按 `Ctrl+F5` **强制清除缓存刷新**，标签页图标就更新了。
 
-## 简化版（临时快速测试，只改浏览器标签）
+### 简化版（临时快速测试，只改浏览器标签）
 
 如果你不想生成整套图标包：
 
@@ -553,18 +554,18 @@ bundle exec jekyll serve
 2. 放到 `assets/img/favicons/`
 3. 重启服务，强制刷新页面
 
-## 补充区分两个图标，别搞混
+### 补充区分两个图标，别搞混
 
 1. ✅ **浏览器标签图标（你现在想改的）**：`assets/img/favicons/`
 2. 侧边栏头像（左侧圆形头像）：`_config.yml` 里的 `author.avatar`，路径一般是`assets/img/avatar.jpg`
 
-## ✅ **新版Chirpy优先加载 `favicon.svg`**
+###  **新版Chirpy优先加载 `favicon.svg`**
 
 Edge / Chrome 浏览器会**优先读取favicon.svg**，而不是ico。你目录里`favicon.svg`如果还是旧图标，标签页就永远显示旧图。
 
 > `favicon.svg` ，**这个svg才是标签图标主文件**，ico只是备用兜底文件。
 
-## 步骤1：验证svg文件（关键）
+#### 步骤1：验证svg文件（关键）
 
 1. 打开无痕窗口，直接访问：
 
@@ -576,7 +577,7 @@ Edge / Chrome 浏览器会**优先读取favicon.svg**，而不是ico。你目录
 
 > realfavicongenerator 生成的包里的 favicon.svg，**一定要替换进去**！很多人只替换ico漏掉svg。
 
-## 步骤2：清理jekyll编译缓存
+#### 步骤2：清理jekyll编译缓存
 
 1. PowerShell里按`Ctrl+C`关闭jekyll服务
 2. 删除项目里整个`_site`文件夹（全部删掉）
@@ -586,7 +587,7 @@ Edge / Chrome 浏览器会**优先读取favicon.svg**，而不是ico。你目录
     - 其他png、webmanifest
 4. 重新启动：`bundle exec jekyll serve`
 
-## 步骤3：如果svg已经是新图，绕过浏览器缓存（终极方案）
+#### 步骤3：如果svg已经是新图，绕过浏览器缓存（终极方案）
 
 复制gem里的 `_includes/favicons.html` 到本地`_includes/`
 
@@ -602,7 +603,7 @@ bundle info --path jekyll-theme-chirpy
 
 > `?v=1` 告诉浏览器：这是全新文件，不要读取缓存。 每次改图标就把数字+1（v=2、v=3）
 
-## 快速自检清单
+### 快速自检清单
 
 1. assets/img/favicons/favicon.svg ✅ 是新图
 2. assets/img/favicons/favicon.ico ✅ 是新图

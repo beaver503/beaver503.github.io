@@ -1,10 +1,9 @@
 ---
-title: github-page搭建
-date: 2026-10-06
-categories: Jekyll
+title: AI热点监控
+date: 2026-10-07
+categories: vibe-coding
 tags:
-  - github-page
-  - Jekyll
+  - vibe-coding
   - 博客
 render_with_liquid: false
 ---
